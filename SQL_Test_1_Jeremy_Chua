@@ -60,7 +60,7 @@ INSERT INTO DEPENDENCY_RULES (UNIT_NBR, RULE_ID, STEP_SEQ_ID, STEP_DEP_ID) VALUE
 (1, 21, 12, 11),
 (1, 22, 13, 12);
 
--- 5. Recursive Query to Determine Step Execution Order, with Circular Dependency Prevention and Logging
+-- 5. Recursive Query to Determine Step Execution Order, with Circular Dependency Prevention
 
 WITH RECURSIVE StepOrder AS (
     -- Base case: Start with steps that have no dependencies (STEP_DEP_ID = 0)
